@@ -28,11 +28,13 @@ public class Pizza {
         if(isVeg == true){
             this.price = 300;
             this.extraToppingPrice = 70;
+            this.TakeAwayPrice = 20;
         }else{
             this.price = 400;
             this.extraToppingPrice = 120;
+            this.TakeAwayPrice = 20;
         }
-        this.TakeAwayPrice = 20;
+
         this.extraCheesePrice = 80;
         this.bill = "Base Price Of The Pizza: "+ this.price + "\n";
     }
@@ -76,7 +78,7 @@ public class Pizza {
                 this.bill = this.bill + "Extra Toppings Added: " + this.extraToppingPrice + "\n";
             }
             if(isTakeAwayAdded){
-                this.bill = this.bill + "Paperbag Added: " + this.takeAwayPrice + "\n";
+                this.bill = this.bill + "Paperbag Added: " + 20 + "\n";
             }
             this.bill = this.bill + "Total Price: " + this.price + "\n";
         }
